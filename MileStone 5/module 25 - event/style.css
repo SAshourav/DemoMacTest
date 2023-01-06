@@ -13,3 +13,18 @@ button:hover{
     font-size: 1.5rem;
     transition: 0.4s;
 }
+input{
+    padding: 5px, 2px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    border-color: aqua;
+}
+p{
+    font-size: 1.3rem;
+}
+#commentBox{
+    border: 3px solid crimson;
+    text-align: start;
+    font-size: 1.5rem;
+}
