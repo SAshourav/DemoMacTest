@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Working with more event function</h2>
+    <section>
+        <h3 id="secret-info">Very important secret information</h3>
+        <input id="confirm-input" type="text" placeholder="Please type delete">
+        <button id="delete-btn">Delete</button>
+    </section>
+
+    <script>
+        const confirm = document.getElementById("confirm-input");
+        console.log(confirm.value);
+        
+            document.getElementById("delete-btn").addEventListener("click", function(){
+                if(confirm.value == "delete"){
+                    document.getElementById("secret-info").style.display="none";
+                    confirm.value = "";
+                }else{
+                    alert("Please type delete on the input field");
+                }
+            })
+            
+        
+    </script>
+</body>
+</html>

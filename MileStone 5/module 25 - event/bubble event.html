@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+<body>
+    <h2>Event bubble</h2>
+    <section id="section-container">
+        <h4>Bubble bhai list</h4>
+        <ul id="list-container">
+            <li id="first-item" class="item">Lorem, ipsum.</li>
+            <li id="second-item" class="item">At, ex.</li>
+            <li class="item">Nihil, amet.</li>
+            <li class="item">Tenetur, repudiandae.</li>
+            <li class="item">Obcaecati, placeat.</li>
+            <li class="item">Amet, quam.</li>
+        </ul>
+    </section>
+
+
+    <script>
+        //bubble effect is the effect of multiple events effect
+        document.getElementById("second-item").addEventListener("click", function(event){
+            event.stopPropagation(); //this will stop the bubble effect
+            console.log("Second item clicked");
+        })
+        document.getElementById("second-item").addEventListener("click", function(event){
+            console.log("Second item clicked 2");
+        })
+        document.getElementById("first-item").addEventListener("click", function(event){
+            event.stopImmediatePropagation();
+            console.log("First item clicked");
+        })
+        document.getElementById("first-item").addEventListener("click", function(event){
+            event.stopImmediatePropagation();
+            console.log("First item clicked 2");
+        })
+        document.getElementById("first-item").addEventListener("click", function(event){
+            event.stopImmediatePropagation();
+            console.log("First item clicked 3");
+        })
+        //list container
+        document.getElementById("list-container").addEventListener("click", function(){
+            console.log("ul clicked");
+        })
+        document.getElementById("section-container").addEventListener("click", function(){
+            console.log("section clicked");
+        })
+    </script>
+</body>
+</html>
