@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+    <header>
+        <h1 class="text-4xl text-center mt-16 mb-8">Welcome To Your Account 
+            <span class="text-orange-600">Sabbir Ahmed !</span>
+        </h1>
+    </header>
+    <main class="mx-auto w-3/4">
+        <section>
+            <div class="grid grid-cols-3 gap-4  text-center">
+                <div class="bg-emerald-200 border rounded border-black p-8 mt-4">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-2xl">$100</h2>
+                </div>
+                <div class="bg-rose-200 border rounded border-black p-8 mt-4">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-2xl">$100</h2>
+                </div>
+                <div class="bg-indigo-300 border rounded border-black p-8 mt-4">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-2xl">$1000</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw-->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-emerald-200 p-8 rounded border border-black">
+                    <h3 class="text-3xl mb-5">Please Deposit</h3>
+                    <input id="deposit-input" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="text" placeholder="Enter amount">
+
+                    <button id="deposit-submit" class="px-3 py-3 rounded text-white bg-rose-500 font-medium">Deposit</button>
+                </div>
+
+                <div class="bg-rose-200 p-8 rounded border border-black">
+                    <h3 class="text-3xl mb-5">Withdraw Your Money</h3>
+                    <input id="withdraw-input" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="text" placeholder="Enter amount">
+
+                    <button id="withdraw-submit" class="px-3 py-3 rounded text-white bg-rose-500 font-medium">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

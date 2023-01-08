@@ -1,0 +1,5 @@
+button:hover{
+    background-color: #363945;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
