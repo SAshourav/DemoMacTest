@@ -19,31 +19,31 @@
             <div class="grid grid-cols-3 gap-4  text-center">
                 <div class="bg-emerald-200 border rounded border-black p-8 mt-4">
                     <h3 class="text-3xl">Deposit</h3>
-                    <h2 class="text-2xl">$100</h2>
+                    <h2 class="text-2xl">$ <span id="currentDeposit">00</span></h2>
                 </div>
                 <div class="bg-rose-200 border rounded border-black p-8 mt-4">
                     <h3 class="text-3xl">Withdraw</h3>
-                    <h2 class="text-2xl">$100</h2>
+                    <h2 class="text-2xl">$ <span id="currentWithdraw">00</span> </h2>
                 </div>
                 <div class="bg-indigo-300 border rounded border-black p-8 mt-4">
                     <h3 class="text-3xl">Balance</h3>
-                    <h2 class="text-2xl">$1000</h2>
+                    <h2 class="text-2xl">$ <span id="currentBalance">00</span> </h2>
                 </div>
             </div>
         </section>
         <!-- Deposit and Withdraw-->
         <section class="mt-8">
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-emerald-200 p-8 rounded border border-black">
+                <div class="bg-emerald-100 p-8 rounded shadow-2xl">
                     <h3 class="text-3xl mb-5">Please Deposit</h3>
-                    <input id="deposit-input" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="text" placeholder="Enter amount">
+                    <input id="deposit-amount" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="number" placeholder="Enter amount">
 
                     <button id="deposit-submit" class="px-3 py-3 rounded text-white bg-rose-500 font-medium">Deposit</button>
                 </div>
 
-                <div class="bg-rose-200 p-8 rounded border border-black">
+                <div class="bg-rose-100 p-8 rounded shadow-2xl">
                     <h3 class="text-3xl mb-5">Withdraw Your Money</h3>
-                    <input id="withdraw-input" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="text" placeholder="Enter amount">
+                    <input id="withdraw-amount" class="font-medium border block border-black rounded w-2/4 mb-4 px-2" type="text" placeholder="Enter amount">
 
                     <button id="withdraw-submit" class="px-3 py-3 rounded text-white bg-rose-500 font-medium">Withdraw</button>
                 </div>
@@ -51,5 +51,6 @@
             </div>
         </section>
     </main>
+    <script src="js/home.js"></script>
 </body>
 </html>
