@@ -1,0 +1,17 @@
+.single-t-shirt{
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.single-t-shirt img {
+    height: 250px;
+}
+.single-t-shirt button{
+    padding: 8px 12px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.single-t-shirt button:hover{
+    color: aliceblue;
+    background-color: cadetblue;
+}
