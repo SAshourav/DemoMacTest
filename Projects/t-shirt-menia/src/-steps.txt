@@ -1,0 +1,4 @@
+1. declare a context 
+2. set provider 
+3. useContext in the place where you want to get the context value
+4. 
